@@ -3,7 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:nav="clr-namespace:App02_TipoPageXF.TipoPagina.Navigation"
              x:Class="App02_TipoPageXF.TipoPagina.Tabbed.abas">
-    <nav:Pagina1 />
+    <NavigationPage Title="Item 1">
+        
+        <x:Arguments>
+            <nav:Pagina1 />
+        </x:Arguments>
+
+    </NavigationPage>
     <nav:Pagina2 />
-    <nav:Pagina1 />
 </TabbedPage>

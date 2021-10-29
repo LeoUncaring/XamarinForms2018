@@ -7,16 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App02_TipoPageXF.TipoPagina.Tabbed
+namespace App02_TipoPageXF.TipoPagina.Master
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class abas : TabbedPage
+    public partial class Conteudo : ContentPage
     {
-        public abas()
+        public Conteudo()
         {
             InitializeComponent();
-
-            Children.Add(new NavigationPage(new TipoPagina.Navigation.Pagina1()) { Title = "Item 3" });
         }
     }
 }
