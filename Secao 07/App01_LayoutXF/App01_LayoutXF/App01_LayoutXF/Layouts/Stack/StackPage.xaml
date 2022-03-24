@@ -4,11 +4,11 @@
              x:Class="App01_LayoutXF.Layouts.Stack.StackPage">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Margin="10, 5, 15, 20" Padding="30" Spacing="0" BackgroundColor="Aquamarine" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <BoxView BackgroundColor="Green" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
                 <BoxView BackgroundColor="Blue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <BoxView BackgroundColor="Green" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
                 <BoxView BackgroundColor="Blue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
             </StackLayout>
