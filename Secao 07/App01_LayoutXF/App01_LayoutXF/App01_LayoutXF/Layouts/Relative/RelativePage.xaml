@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App01_LayoutXF.Layouts.Relative.RelativePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RelativeLayout>
+            <BoxView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=}" BackgroundColor="Blue"/>
+            
+            <BoxView BackgroundColor="Red" Margin="200" WidthRequest="100" HeightRequest="100" x:Name="Vermelho" />
+
+            <BoxView BackgroundColor="Green"
+                WidthRequest="100" HeightRequest="100"
+                RelativeLayout.XConstraint="{ConstraintExpression ElementName=Vermelho, Type=RelativeToView, Property= X, Factor= 1, Constant=20}"
+                RelativeLayout.YConstraint="{ConstraintExpression ElementName=Vermelho, Type=RelativeToView, Property=Y, Factor=1,Constant=20}"/>
+            
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>

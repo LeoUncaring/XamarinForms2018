@@ -4,9 +4,13 @@
              x:Class="App01_LayoutXF.Layouts.Absolute.AbsolutePage">
     <ContentPage.Content>
         <AbsoluteLayout>
-            <BoxView BackgroundColor="Blue" />
-            <BoxView BackgroundColor="Red"/>
-            <BoxView BackgroundColor=""
+            <BoxView AbsoluteLayout.LayoutBounds="0, 0, 200, 100" BackgroundColor="Blue" />
+            <BoxView AbsoluteLayout.LayoutBounds="50, 50, 100, 100" BackgroundColor="Green"/>
+            <BoxView AbsoluteLayout.LayoutBounds="150, 150, 50, 50" BackgroundColor="Red"/>
+
+
+            <BoxView AbsoluteLayout.LayoutFlags="WidthProportional" AbsoluteLayout.LayoutBounds="0, 400, 0.8, 100" BackgroundColor="Yellow"/>
+            <BoxView AbsoluteLayout.LayoutFlags="SizeProportional" AbsoluteLayout.LayoutBounds="300, 300, 0.5, 0.5" BackgroundColor="GreenYellow"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
