@@ -4,7 +4,8 @@
              x:Class="App01_LayoutXF.Layouts.Relative.RelativePage">
     <ContentPage.Content>
         <RelativeLayout>
-            <BoxView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=}" BackgroundColor="Blue"/>
+            <BoxView BackgroundColor="Blue"
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=20}"      />
             
             <BoxView BackgroundColor="Red" Margin="200" WidthRequest="100" HeightRequest="100" x:Name="Vermelho" />
 
